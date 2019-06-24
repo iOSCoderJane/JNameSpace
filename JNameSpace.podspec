@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JNameSpace'
-  s.version          = '1.2.0'
+  s.version          = '1.3.0'
   s.summary          = 'Provide name spacing with swift.'
   s.swift_version    = '5.0'
 

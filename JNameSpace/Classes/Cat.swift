@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class Cat: NSObject {
+@objc public class Cat: NSObject {
     public let name: String
     public let sex: String
     
