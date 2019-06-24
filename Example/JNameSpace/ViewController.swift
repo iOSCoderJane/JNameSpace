@@ -19,6 +19,9 @@ class ViewController: UIViewController {
         
         let p = Person(name: "name", age: 11)
         print(p)
+        
+        let cat = Cat(name: "cat", sex: "nan")
+        print(cat)
     }
 
     override func didReceiveMemoryWarning() {
