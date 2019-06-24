@@ -11,8 +11,8 @@
 		23E696DF49B8E2E5E50E1C76023EAEB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		2659F900DD8E13BECCFA8E1577C73AEB /* Pods-JNameSpace_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 572804D4F13CFA9551B09F25237A8A7A /* Pods-JNameSpace_Example-dummy.m */; };
 		429DDD5EBA7D1036E75A7783B1B6A607 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		470428DD22C0F00800DC362B /* NameSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470428DC22C0F00800DC362B /* NameSpacing.swift */; };
-		470428DF22C0F01900DC362B /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470428DE22C0F01900DC362B /* ColorExtensions.swift */; };
+		470428E522C0F3AA00DC362B /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470428E222C0F3AA00DC362B /* ColorExtensions.swift */; };
+		470428E622C0F3AA00DC362B /* NameSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470428E322C0F3AA00DC362B /* NameSpacing.swift */; };
 		51977D31337948CB2610CFA32C6FFEC8 /* Pods-JNameSpace_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29EB80F707889F1FA8528A2508E04E5E /* Pods-JNameSpace_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		893404EF5C7510E7B5666CB85D671DE7 /* Pods-JNameSpace_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98319DF8A50EA6599A03071A853A4B94 /* Pods-JNameSpace_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD66A7BF0E3C922BB4425E9BFC6A5BD5 /* Pods-JNameSpace_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7264C0E064AE1B54505DBC05B86EBB06 /* Pods-JNameSpace_Tests-dummy.m */; };
@@ -46,8 +46,8 @@
 		34988E9E20D6BCA6602F9094F4B86B07 /* Pods_JNameSpace_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JNameSpace_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		360AF25307D0C6599C2605D5B1FE3D39 /* JNameSpace.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JNameSpace.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3E626B330939E2B7F0B52FE2B67436A5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		470428DC22C0F00800DC362B /* NameSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpacing.swift; sourceTree = "<group>"; };
-		470428DE22C0F01900DC362B /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		470428E222C0F3AA00DC362B /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		470428E322C0F3AA00DC362B /* NameSpacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameSpacing.swift; sourceTree = "<group>"; };
 		49CFFD18717E238F9F0F417E3D61B74A /* Pods-JNameSpace_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JNameSpace_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		505978CEBD8D4E7BFA752DD65FF1F414 /* JNameSpace-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JNameSpace-Info.plist"; sourceTree = "<group>"; };
 		5581318D8D68390DF34958F133E211A0 /* Pods-JNameSpace_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JNameSpace_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -147,6 +147,16 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		470428E022C0F3AA00DC362B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				470428E222C0F3AA00DC362B /* ColorExtensions.swift */,
+				470428E322C0F3AA00DC362B /* NameSpacing.swift */,
+			);
+			name = Classes;
+			path = JNameSpace/Classes;
+			sourceTree = "<group>";
+		};
 		5FAAD3218D1DA5CCA0E0F87458051DBB /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,8 +168,7 @@
 		6788908FC31E07571FA1BB7DAC2749B8 /* JNameSpace */ = {
 			isa = PBXGroup;
 			children = (
-				470428DC22C0F00800DC362B /* NameSpacing.swift */,
-				470428DE22C0F01900DC362B /* ColorExtensions.swift */,
+				470428E022C0F3AA00DC362B /* Classes */,
 				215A15B3F340699210E717BC726677EA /* Pod */,
 				D03AFD81598B54C859E37DEE7089951E /* Support Files */,
 			);
@@ -369,8 +378,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E14E3F73B7ABF640396FAA8A84651C61 /* JNameSpace-dummy.m in Sources */,
-				470428DD22C0F00800DC362B /* NameSpacing.swift in Sources */,
-				470428DF22C0F01900DC362B /* ColorExtensions.swift in Sources */,
+				470428E522C0F3AA00DC362B /* ColorExtensions.swift in Sources */,
+				470428E622C0F3AA00DC362B /* NameSpacing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
