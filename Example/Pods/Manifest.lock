@@ -1,0 +1,16 @@
+PODS:
+  - JNameSpace (0.1.0)
+
+DEPENDENCIES:
+  - JNameSpace (from `../`)
+
+EXTERNAL SOURCES:
+  JNameSpace:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JNameSpace: 8a1bd353d611868b8fc8c031b0740ee86e4afd03
+
+PODFILE CHECKSUM: d4e3156b735dd561ace34d5ae6e4a9e4418b4781
+
+COCOAPODS: 1.6.1
