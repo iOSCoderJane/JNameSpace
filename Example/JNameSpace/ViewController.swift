@@ -16,6 +16,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         view.backgroundColor = UIColor.ws.theme
+        
+        let p = Person(name: "name", age: 11)
+        print(p)
     }
 
     override func didReceiveMemoryWarning() {
